@@ -1,0 +1,187 @@
+Variable:
+It is the entity that may vary during the program execution
+The variable will define along with value.
+
+Syntax of variable:
+<DataType> <variableName> = <ValueAssignToVariable> ;
+int i = 10;
+
+Gauidline for defining the variable:
+Variable name can be combination of alphabets, digits and special symbols
+First charchet of varibale name must be alphabet or underscore
+It must be meaningful word
+No blank space is allowed
+
+Example:
+int a; // valid
+int _a; //valid
+int a5; // valid
+int 5a; //not allowed
+int 5_a; // not allowed
+int student_name; //allowed
+int student name; //not allowed
+
+Types of Variable:
+
+1) Global Variable
+2) Local Variable
+
+1) Global Variable:
+It will be available everywhere
+It is tha variable which is define inside the class but outside the method;
+It is also called as instance variable
+Global varaiable will be stored into heap area
+The value will be assosioated with object.
+It is created at the time of object creation.
+Global variable will be initialize with defaut value automatically by JVM
+
+How to declear and initialize the global variable:
+	int x;  //Declaration of global variable
+	
+	int y = 10; // Initialization of global variable
+
+2) Local Variable:
+If the variable is decleare inside the method
+We can decleare local variable inside block and constructor also;
+The scope of local varaiable will be within declrea method, block or constructor.
+Local variable will not be initialize with default value.
+If we are not initile and try to use local variable we will get compile time error
+It is used to meet the temp requirement.
+Local variable will be stored into stack area
+
+How to decleare local variable:
+		int a; // Declaration of local variable
+		
+		int b = 5; // Initialization of local variable
+
+
+Literals:
+It is the value assign to variables
+int x = 10;
+
+x = variable name
+int = data type
+10 = value it is also known as literals
+
+
+
+public class Test {
+	
+	int x;// Declaring the int data type
+	byte b; // Declaring the byte data type
+	short s; //Declaring the short data type
+	long l; //Declaring the long data type
+	float f; //Declaring the float data type
+	double d; //Declaring the double data type
+	char ch; //Declaring the char data type
+	boolean boo; //Declaring the boolean data type
+	
+	public static void main (String [] args) {
+		
+		//Create the object of Test class
+		Test test = new Test();
+		System.out.println("int>> "+test.x);
+		System.out.println("byte>> "+test.b);
+		System.out.println("short>> "+test.s);
+		System.out.println("long>> "+test.l);
+		System.out.println("float>> "+test.f);
+		System.out.println("double>> "+test.d);
+		System.out.println("char>> "+test.ch);
+		System.out.println("boolean>> "+test.boo);
+		
+	}
+
+}
+
+
+int>> 0
+byte>> 0
+short>> 0
+long>> 0
+float>> 0.0
+double>> 0.0
+char>> 
+boolean>> false
+
+m1(){
+int a =5;
+
+}
+
+
+m2(){
+
+
+}
+
+m3(){
+
+
+}
+
+
+
+
+
+public class Student {//Start of class
+	
+	int x;  //Declaration of global variable
+	
+	int y = 10; // Initialization of global variable
+	
+	//Main method
+	public static void main(String[] args) {//It is start of method
+		int a; // Declaration of local variable
+		
+		int b = 5; // Initialization of local variable
+		
+		System.out.println(b); // here we will get only value
+		
+		System.out.println("Value of local variable b is >> " + b); // Here we will get value along with message
+		
+		//Creating the object of Student class
+		Student student = new Student();
+		
+		System.out.println("X>> "+student.x);//Here we are calling global variable //0
+		
+		System.out.println("Y>> "+student.y); //10
+	}//End of method
+	
+	
+
+} //end of class
+
+
+
+
+public class ExampleDemo {
+	
+	//Main method
+	public static void main (String [] args) {
+
+		//First step is to create the object of class
+		Student student = new Student();
+		System.out.println("X from Student class>> " + student.x);
+		
+		System.out.println("Y from student class>> " + student.y);
+		
+		
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
